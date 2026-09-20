@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>文章 on 小顾同学</title>
-		<link>https://gulei99.github.io/posts/</link>
-		<description>Recent content in 文章 on 小顾同学</description>
+		<title>科研 on 小顾同学</title>
+		<link>https://gulei99.github.io/tags/%E7%A7%91%E7%A0%94/</link>
+		<description>Recent content in 科研 on 小顾同学</description>
 		<generator>Hugo</generator>
 		<language>en</language>
 		
@@ -12,7 +12,7 @@
 		
 			<lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://gulei99.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://gulei99.github.io/tags/%E7%A7%91%E7%A0%94/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>GestaCare：用 14 年的常规产检记录，预测早产</title>
 				<link>https://gulei99.github.io/posts/2026-09-19-gestacare-npj/</link>

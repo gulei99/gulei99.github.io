@@ -10,6 +10,22 @@
 		
 		
 		
+			<lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
 			<atom:link href="https://gulei99.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>医疗 AI</title>
+				<link>https://gulei99.github.io/tags/%E5%8C%BB%E7%96%97-ai/</link>
+				<pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://gulei99.github.io/tags/%E5%8C%BB%E7%96%97-ai/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>科研</title>
+				<link>https://gulei99.github.io/tags/%E7%A7%91%E7%A0%94/</link>
+				<pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>https://gulei99.github.io/tags/%E7%A7%91%E7%A0%94/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>

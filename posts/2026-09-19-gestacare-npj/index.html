@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GestaCare：用 14 年的常规产检记录，预测早产 · 小顾同学</title>
+  <meta name="description" content="从建筑转向医学 AI 的全过程记录：学过的课、写过的代码、踩过的坑、想明白的事。">
+  <meta name="author" content="LeiGu">
+  <meta property="og:site_name" content="小顾同学">
+  <meta property="og:title" content="GestaCare：用 14 年的常规产检记录，预测早产">
+  <meta property="og:description" content="从建筑转向医学 AI 的全过程记录：学过的课、写过的代码、踩过的坑、想明白的事。">
+  <meta property="og:type" content="article">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/main.min.44c6fec8127783e2c963b3f53fac9694baeb733bc6b2899e1ebfd255145e4dde.css">
+  <link rel="preconnect" href="https://fonts.loli.net">
+  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
+  <link href="https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="site-title" href="/">小顾同学</a>
+    <nav class="site-nav">
+      
+      <a href="/">首页</a>
+      
+      <a href="/posts/">文章</a>
+      
+      <a href="/portfolio/">作品集</a>
+      
+      <a href="/photos/">摄影</a>
+      
+      <a href="/about/">关于</a>
+      
+      <a href="/cv/">简历</a>
+      
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    
+<article class="post">
+  <header class="post-header">
+    <h1>GestaCare：用 14 年的常规产检记录，预测早产</h1>
+    
+    <p class="post-meta">
+      <time datetime="2026-09-19">2026-09-19</time>
+      <span class="cat">科研</span>
+    </p>
+    
+  </header>
+  <div class="post-content">
+    <p>我和团队的工作 <strong>GestaCare</strong> 发表在 Nature 旗下期刊 <strong>npj Digital Medicine</strong>（IF=18，SCI 一区 Top）。我在这篇工作里承担了共同第一作者的部分。这里用中文把这件事讲清楚：我们做了什么、为什么做、以及它可能改变什么。</p>
+
+
+
+
+
+
+
+<figure class="pic">
+  <img src="/images/posts/gestacare/npj-page_hu_e59cb8d4c0e5dd8e.webp" alt="论文在线页面：npj Digital Medicine，2026 年 8 月 5 日上线" loading="lazy">
+  <figcaption>论文在线页面：npj Digital Medicine，2026 年 8 月 5 日上线</figcaption>
+</figure>
+
+
+<h2 id="早产一个被低估的世界性难题">早产：一个被低估的世界性难题</h2>
+<p>早产（怀孕不满 37 周分娩）是全球 5 岁以下儿童死亡的&quot;头号杀手&quot;之一，大约每 10 个新生儿里就有 1 个早产。分娩孕周越早，孩子死亡、严重并发症和远期发育异常的风险就越高。双胎妊娠的风险还要更高。</p>
+<p>而早产不是临产那一刻突然发生的——很多病理过程在孕期悄悄演变了几个月。所以临床上真正需要的，是在整个孕期<strong>动态</strong>评估风险，而不是临近了才发现。</p>
+<h2 id="难在哪三个坎">难在哪：三个坎</h2>
+<p><strong>1. 准的方法太贵。</strong> 近年研究用蛋白质组学、代谢组学描绘&quot;妊娠时钟&quot;，性能不错，但质谱和高通量测序不是常规产检项目，成本太高，没法推广。</p>
+<p><strong>2. 常规产检的数据被浪费了。</strong> 孕妇整个孕期要产检十几次，这些连续变化的数据里全是信息。但现有预测研究大多把动态过程压缩成一两次静态评估，等于只看了一个快照。</p>
+<p><strong>3. 只回答&quot;会不会&quot;，不回答&quot;什么时候&quot;。</strong> 产科医生其实更想知道&quot;距离分娩还有几周&quot;，这样才能安排预防措施。现有模型大多只输出一个二分类结果。</p>
+<h2 id="gestacare让常规病历变成数字预警仪">GestaCare：让常规病历变成&quot;数字预警仪&quot;</h2>
+<p>针对这三个问题，团队开发了 GestaCare 深度学习模型：按产检时间顺序整合孕妇的历次常规病历，每次产检后动态更新早产风险，并估计距离分娩还有几周。</p>
+
+
+
+
+
+
+
+<figure class="pic">
+  <img src="/images/posts/gestacare/gestacare-overview_hu_b1db2cd88c99ebb8.webp" alt="GestaCare 研究总览：从产检记录到动态预测、临床解释与交互展示" loading="lazy">
+  <figcaption>GestaCare 研究总览：从产检记录到动态预测、临床解释与交互展示</figcaption>
+</figure>
+
+
+<p>技术上有三个关键设计：</p>
+<ul>
+<li><strong>只看过去，不看未来。</strong> 医生在产检现场不可能预知之后的检查结果。GestaCare 用单向 GRU 加因果注意力掩码，每次预测都严格只使用&quot;截至当时&quot;的数据，还原真实临床场景，避免模型&quot;偷看答案&quot;。</li>
+<li><strong>自动抓重点。</strong> 不同孕妇的产检时间和项目千差万别，模型引入时间间隔自适应衰减和通道特征重校准，当关键指标（比如宫颈缩短、胆汁酸骤升）出现时能立刻聚焦。</li>
+<li><strong>两个问题一起答。</strong> 同时输出&quot;早产风险有多高&quot;和&quot;距离分娩还有几周&quot;，实验证明联合预测能让两个任务都更准。</li>
+</ul>
+<h2 id="考验14-年9-万例妊娠的数据">考验：14 年、9 万例妊娠的数据</h2>
+<p>模型在<strong>北京大学第三医院 2011–2024 年</strong>的电子病历上开发：56,373 例单胎 + 3,577 例双胎，覆盖连续 14 个日历年——是目前早产预测领域规模最大、时间跨度最长的单中心电子病历队列之一。</p>
+<p>训练完成后，模型参数全部冻结，接受两项独立考试：</p>
+<ul>
+<li><strong>前瞻性同中心验证</strong>：北医三院后续时间段的 6,555 例单胎 + 425 例双胎；</li>
+<li><strong>外部多中心验证</strong>：深圳市宝安区妇幼保健院的 25,824 例单胎 + 1,530 例双胎。</li>
+</ul>
+<p>结果：单胎早产预测 AUROC 0.810 / AUPRC 0.328，比最优基线模型分别提升 <strong>7.0% 和 23.3%</strong>；分娩孕周预测的平均绝对误差仅 <strong>1.58~2.20 周</strong>。即使把数据缺失率压到 60%~80% 的极端条件，性能依然稳定。</p>
+<h2 id="两个意外的科学发现">两个意外的科学发现</h2>
+<p><strong>一、单胎和双胎的早产，走的是两条完全不同的路径。</strong> 单胎呈&quot;营养-炎症主导&quot;：白蛋白、转氨酶、红细胞指标最重要；双胎则是&quot;机械-血流动力学主导&quot;：宫颈长度、孕妇年龄、空腹血糖权重最高。这说明两种早产的病理机制本质不同，不能照同一套思路防。</p>
+<p><strong>二、化验单的&quot;正常范围&quot;在孕期并不可靠。</strong> GestaCare 发现很多指标与早产风险是非线性关系，存在随孕周变化的&quot;动态安全区间&quot;——化验单上的轻度异常未必危险，而某些还在&quot;正常范围内&quot;却逼近风险拐点的值，反而要警惕。</p>
+
+
+
+
+
+
+
+<figure class="pic">
+  <img src="/images/posts/gestacare/safe-ranges_hu_260c9780c5c1a671.webp" alt="动态安全区间：单胎看白蛋白（ALB），双胎看宫颈长度（CL）" loading="lazy">
+  <figcaption>动态安全区间：单胎看白蛋白（ALB），双胎看宫颈长度（CL）</figcaption>
+</figure>
+
+
+<p>另外，模型对<strong>医源性早产</strong>（有明确医学原因需要提前终止妊娠）的识别尤其准（单胎 AUROC 0.929），因为这类早产往往伴随子痫前期、肝肾功能恶化等有迹可循的指标轨迹——AI 抓住了。</p>
+<h2 id="全部开源">全部开源</h2>
+<p>为了服务更多产科医生和孕产妇，我们<strong>免费开源了全套算法代码和可交互网页系统</strong>：</p>
+<ul>
+<li>论文：<a href="https://www.nature.com/articles/s41746-026-03071-w">npj Digital Medicine</a></li>
+<li>代码：<a href="https://github.com/MedX-PKU/GestaCare">github.com/MedX-PKU/GestaCare</a></li>
+<li>交互展示：<a href="https://gestacare.pages.dev/">gestacare.pages.dev</a></li>
+</ul>
+<p>从昂贵的组学检测，到基于常规病历的动态预测——我们希望这是一条普惠、可推广的路线，让资源不均衡地区的孕产妇也能用上 AI 守护孕期安全。</p>
+
+  </div>
+  
+  <p class="tag-row post-tags">
+    标签：<a class="tag" href="/tags/%E7%A7%91%E7%A0%94/">科研</a><a class="tag" href="/tags/%E5%8C%BB%E7%96%97-ai/">医疗 AI</a>
+  </p>
+  
+  
+  <nav class="post-nav">
+    <span></span>
+    
+  </nav>
+  
+</article>
+
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    <p>© 2026 LeiGu · 小顾同学</p>
+    <p class="footer-meta">
+      <a href="https://scholar.google.com/citations?user=odoNEYQAAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a> · 
+      <a href="https://www.xiaohongshu.com/user/profile/695618a1000000001401524c" target="_blank" rel="noopener">小红书</a> · 
+      <a href="https://gulei99.github.io/index.xml">RSS</a> ·
+      由 <a href="https://gohugo.io/" rel="noopener">Hugo</a> 驱动
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
