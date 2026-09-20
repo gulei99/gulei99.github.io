@@ -2,50 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gulei99.github.io/portfolio/nanmen/</loc>
+    <loc>http://localhost:1313/portfolio/nanmen/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/photos/jeju/</loc>
+    <loc>http://localhost:1313/photos/jeju/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/photos/city/</loc>
+    <loc>http://localhost:1313/photos/city/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/portfolio/opera/</loc>
+    <loc>http://localhost:1313/portfolio/opera/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/portfolio/zoo/</loc>
+    <loc>http://localhost:1313/portfolio/zoo/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/photos/sky/</loc>
+    <loc>http://localhost:1313/photos/sky/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/portfolio/models/</loc>
+    <loc>http://localhost:1313/portfolio/models/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gulei99.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gulei99.github.io/posts/2026-09-19-gestacare-npj/</loc>
+    <loc>http://localhost:1313/posts/2026-09-19-gestacare-npj/</loc>
     <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gulei99.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gulei99.github.io/tags/%E5%8C%BB%E7%96%97-ai/</loc>
+    <loc>http://localhost:1313/tags/%E5%8C%BB%E7%96%97-ai/</loc>
     <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gulei99.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gulei99.github.io/categories/%E7%A7%91%E7%A0%94/</loc>
+    <loc>http://localhost:1313/categories/%E7%A7%91%E7%A0%94/</loc>
     <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gulei99.github.io/tags/%E7%A7%91%E7%A0%94/</loc>
+    <loc>http://localhost:1313/tags/%E7%A7%91%E7%A0%94/</loc>
     <lastmod>2026-09-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://gulei99.github.io/portfolio/</loc>
+    <loc>http://localhost:1313/portfolio/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/photos/</loc>
+    <loc>http://localhost:1313/photos/</loc>
   </url><url>
-    <loc>https://gulei99.github.io/cv/</loc>
+    <loc>http://localhost:1313/cv/</loc>
   </url>
 </urlset>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>小顾同学</title>
-		<link>https://gulei99.github.io/</link>
+		<link>http://localhost:1313/</link>
 		<description>Recent content on 小顾同学</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -12,26 +12,26 @@
 		
 			<lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://gulei99.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>GestaCare：用 14 年的常规产检记录，预测早产</title>
-				<link>https://gulei99.github.io/posts/2026-09-19-gestacare-npj/</link>
+				<link>http://localhost:1313/posts/2026-09-19-gestacare-npj/</link>
 				<pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
-				<guid>https://gulei99.github.io/posts/2026-09-19-gestacare-npj/</guid>
+				<guid>http://localhost:1313/posts/2026-09-19-gestacare-npj/</guid>
 				<description>基于 14 年、超 9 万例妊娠的常规产检记录，让 AI 在每一次产检时动态预测早产风险与分娩时间。</description>
 			</item>
 			<item>
 				<title>关于我</title>
-				<link>https://gulei99.github.io/about/</link>
+				<link>http://localhost:1313/about/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://gulei99.github.io/about/</guid>
-				<description>&lt;img class=&#34;about-avatar&#34; src=&#34;https://gulei99.github.io/images/avatar_hu_1fa87717a35769f3.webp&#34; width=&#34;140&#34; height=&#34;140&#34; alt=&#34;LeiGu的头像&#34;&gt;&#xA;&#xA;&#xA;&lt;p&gt;我是&lt;strong&gt;顾磊（Lei Gu）&lt;/strong&gt;，同济大学建筑学硕士在读。&lt;/p&gt;&#xA;&lt;h2 id=&#34;现在在做什么&#34;&gt;现在在做什么&lt;/h2&gt;&#xA;&lt;p&gt;研究方向是 &lt;strong&gt;AI for healthcare&lt;/strong&gt;：让 AI 读懂电子健康记录（EHR）、辅助临床决策。目前在北京大学软件与微电子学院做科研助理；2026 年 9 月起在香港大学计算与数据科学学院交流。作为合作者参与的工作发表在 &lt;em&gt;npj Digital Medicine&lt;/em&gt;、KDD、CHI 等期刊和会议上，完整列表见我的 &lt;a href=&#34;https://scholar.google.com/citations?user=odoNEYQAAAAJ&amp;amp;hl=zh-CN&#34;&gt;Google Scholar 主页&lt;/a&gt;，完整履历见&lt;a href=&#34;https://gulei99.github.io/cv/&#34;&gt;简历页&lt;/a&gt;。&lt;/p&gt;</description>
+				<guid>http://localhost:1313/about/</guid>
+				<description>&lt;img class=&#34;about-avatar&#34; src=&#34;http://localhost:1313/images/avatar_hu_1fa87717a35769f3.webp&#34; width=&#34;140&#34; height=&#34;140&#34; alt=&#34;LeiGu的头像&#34;&gt;&#xA;&#xA;&#xA;&lt;p&gt;我是&lt;strong&gt;顾磊（Lei Gu）&lt;/strong&gt;，同济大学建筑学硕士在读。&lt;/p&gt;&#xA;&lt;h2 id=&#34;现在在做什么&#34;&gt;现在在做什么&lt;/h2&gt;&#xA;&lt;p&gt;研究方向是 &lt;strong&gt;AI for healthcare&lt;/strong&gt;：让 AI 读懂电子健康记录（EHR）、辅助临床决策。目前在北京大学软件与微电子学院做科研助理；2026 年 9 月起在香港大学计算与数据科学学院交流。作为合作者参与的工作发表在 &lt;em&gt;npj Digital Medicine&lt;/em&gt;、KDD、CHI 等期刊和会议上，完整列表见我的 &lt;a href=&#34;https://scholar.google.com/citations?user=odoNEYQAAAAJ&amp;amp;hl=zh-CN&#34;&gt;Google Scholar 主页&lt;/a&gt;，完整履历见&lt;a href=&#34;http://localhost:1313/cv/&#34;&gt;简历页&lt;/a&gt;。&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>简历</title>
-				<link>https://gulei99.github.io/cv/</link>
+				<link>http://localhost:1313/cv/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://gulei99.github.io/cv/</guid>
+				<guid>http://localhost:1313/cv/</guid>
 				<description>&lt;p&gt;顾磊 (Lei Gu) · &lt;a href=&#34;mailto:leiguha99@gmail.com&#34;&gt;leiguha99@gmail.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;研究方向&#34;&gt;研究方向&lt;/h2&gt;&#xA;&lt;p&gt;我的研究围绕 &lt;strong&gt;AI for Healthcare&lt;/strong&gt;：用医学大语言模型组织临床智能体工作流（agentic workflows），把复杂的医疗数据分析落到可用的临床决策支持上。&lt;/p&gt;</description>
 			</item>
 	</channel>
