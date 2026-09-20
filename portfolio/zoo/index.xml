@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>南京红山森林动物园河马馆设计 on 小顾同学</title>
-		<link>http://localhost:1313/portfolio/zoo/</link>
+		<link>https://gulei99.github.io/portfolio/zoo/</link>
 		<description>Recent content in 南京红山森林动物园河马馆设计 on 小顾同学</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -10,6 +10,6 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/portfolio/zoo/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://gulei99.github.io/portfolio/zoo/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>
