@@ -12,13 +12,6 @@
 		
 			<atom:link href="https://gulei99.github.io/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>作品集</title>
-				<link>https://gulei99.github.io/portfolio/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://gulei99.github.io/portfolio/</guid>
-				<description>&lt;p&gt;在建筑系读了五年，学到最重要的本事是：再复杂、再不知道从哪下手的东西，都可以拆成一个个小问题——想明白一块，就动手做一块，再一块块拼回去。复杂的东西，就是这样被人一点点理解、一点点建造出来的。&lt;/p&gt;</description>
-			</item>
-			<item>
 				<title>关于我</title>
 				<link>https://gulei99.github.io/about/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
