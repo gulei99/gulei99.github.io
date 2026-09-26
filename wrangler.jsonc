@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gulei99-github-io",
+  "compatibility_date": "2026-09-25",
+  "main": "worker.js",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page"
+  },
+  "kv_namespaces": [
+    { "binding": "HITS", "id": "2894ff6e645946b0ba536583acc9a73d" }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

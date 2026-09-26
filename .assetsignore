@@ -1,3 +1,9 @@
 # wrangler deploy 时排除的文件（Workers 单文件上限 25MiB，.git 的 pack 会超）
 .git
 .nojekyll
+.wrangler
+worker.js
+wrangler.jsonc
+package.json
+package-lock.json
+node_modules
