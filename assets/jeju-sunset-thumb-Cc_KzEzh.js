@@ -1,0 +1,1 @@
+var e=`/images/portfolio/hippo-cover-thumb.webp`,t=`/images/photos/jeju-sunset-thumb.webp`;export{e as n,t};
